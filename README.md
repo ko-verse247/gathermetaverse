@@ -1,2 +1,2 @@
-# gathermetaverse
-Repo to store code related to sckool in the gather town metaverse
+# Sckool Gather Town Metaverse
+Repository to connect the Sckool Gather Town to our Sckool website.

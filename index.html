@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sckool Metaverse</title>
+</head>
+<body>
+    <img
+        id="image"
+        width="1920"
+        height="1080"
+        alt=""
+        src="assets/sckool-gather-click.png"
+        onclick="openSckool()"
+        style="cursor: pointer"
+    >
+</body>
+</html>
+
+<script>
+  let roomUrl = '';
+
+  (function () {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const classRoom = urlParams.get('classRoom');
+
+    if (classRoom === 'room1') {
+      roomUrl = '63c0e24d3d6c047d0f12a8ae/lectures';
+    }
+
+  })();
+
+  function openSckool() {
+    window.open("https://staging.sckool.kr/my-classes/" + roomUrl, "Sckool", "width = 1920, height = 1080");
+  }
+</script>
